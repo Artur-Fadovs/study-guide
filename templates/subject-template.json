@@ -1,0 +1,10 @@
+{
+  "id": "short-id", "title": "Subject name", "color": "#2f6fed", "glossary": "content/short-id/glossary.json",
+  "children": [
+    { "id": "unit", "title": "Unit", "children": [
+      { "id": "topic", "title": "Topic", "children": [
+        { "id": "lesson", "title": "Lesson", "file": "content/short-id/unit/lesson.md", "draft": true }
+      ]}
+    ]}
+  ]
+}

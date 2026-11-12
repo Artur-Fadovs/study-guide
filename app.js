@@ -21,6 +21,7 @@ function build(node, depth, color, path) {
   const card = document.createElement(isLesson ? 'a' : 'button');
   card.className = 'card d' + Math.min(depth, 3);
   card.textContent = node.title;
+  if (node.draft) card.classList.add('draft');   // empty template lesson
   wrap.append(card);
 
   if (isLesson) {

@@ -1,0 +1,4 @@
+{
+  "compiler": { "term": "Compiler", "type": "noun", "def": "A program that translates source code into machine code.", "more": "gcc and clang are the most common C compilers." },
+  "header file": { "term": "Header file", "type": "noun", "def": "A .h file that declares functions and types so other files can use them.", "more": "The standard library headers (stdio.h, stdlib.h) are included with angle brackets." }
+}

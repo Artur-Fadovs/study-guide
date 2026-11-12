@@ -1,6 +1,6 @@
 # Solving one-step equations
 
-Goal: get the variable **alone** on one side by doing the *inverse operation* to both sides.
+Goal: get the [[variable]] **alone** on one side by doing the [[inverse operation]] to both sides.
 
 | Equation | Inverse | Result |
 |---|---|---|
@@ -11,5 +11,12 @@ Goal: get the variable **alone** on one side by doing the *inverse operation* to
 
 <mark>Whatever you do to one side, do to the other.</mark>
 
+## Why it works
+An equation is a balance. Subtracting 5 from both sides keeps it balanced: $x + 5 - 5 = 12 - 5$.
+
+In general, for $a \neq 0$:
+
+$$ax = b \quad\Longrightarrow\quad x = \frac{b}{a}$$
+
 ## Check your answer
-Substitute back in: if x = 7, then 7 + 5 = 12 ✔
+Substitute back in: if $x = 7$, then $7 + 5 = 12$ ✔

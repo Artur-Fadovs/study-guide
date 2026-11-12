@@ -1,0 +1,5 @@
+{
+  "parler":  { "term": "parler", "type": "verb (-er)", "pron": "par-LAY", "def": "to speak, to talk", "more": "The model regular -er verb. Use it to practise the endings.", "example": "Je parle français." },
+  "aimer":   { "term": "aimer", "type": "verb (-er)", "pron": "ay-MAY", "def": "to like, to love", "more": "Use aimer + noun for things you like (j'aime le chocolat). For people it can mean love.", "example": "J'aime le chocolat." },
+  "habiter": { "term": "habiter", "type": "verb (-er)", "pron": "a-bee-TAY", "def": "to live (in a place)", "more": "The h is silent, so je becomes j' (j'habite).", "example": "Nous habitons à Paris." }
+}

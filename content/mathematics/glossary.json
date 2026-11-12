@@ -1,0 +1,4 @@
+{
+  "variable": { "term": "Variable", "type": "noun", "def": "A letter (like x) that stands for an unknown or changing number.", "more": "In 4x = 20, x is the variable and 4 is its coefficient." },
+  "inverse operation": { "term": "Inverse operation", "type": "noun", "def": "An operation that undoes another one.", "more": "Addition and subtraction are inverses, and so are multiplication and division.", "example": "To undo + 5, subtract 5." }
+}

@@ -1,0 +1,10 @@
+{
+  "keyword": {
+    "term": "Keyword",
+    "type": "noun",
+    "pron": "optional pronunciation",
+    "def": "One-line definition.",
+    "more": "Extra detail that is relevant to this subject.",
+    "example": "An example sentence or use."
+  }
+}

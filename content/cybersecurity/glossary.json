@@ -1,0 +1,8 @@
+{
+  "scope": {
+    "term": "Scope",
+    "type": "noun",
+    "def": "The systems and actions you are explicitly allowed to test.",
+    "more": "Only test systems you own or have written permission to test."
+  }
+}

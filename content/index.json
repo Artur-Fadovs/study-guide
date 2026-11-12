@@ -1,22 +1,677 @@
 [
   {
-    "id": "math", "title": "Mathematics", "color": "#2f6fed",
+    "id": "math",
+    "title": "Mathematics",
+    "color": "#2f6fed",
     "children": [
-      { "id": "algebra", "title": "Algebra", "children": [
-        { "id": "linear", "title": "Linear equations", "children": [
-          { "id": "one-step", "title": "Solving one-step equations", "file": "content/mathematics/one-step-equations.md" }
-        ]}
-      ]}
+      {
+        "id": "algebra",
+        "title": "Algebra",
+        "children": [
+          {
+            "id": "linear",
+            "title": "Linear equations",
+            "children": [
+              {
+                "id": "one-step",
+                "title": "Solving one-step equations",
+                "file": "content/mathematics/one-step-equations.md"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "glossary": "content/mathematics/glossary.json"
+  },
+  {
+    "id": "french",
+    "title": "French",
+    "color": "#d6336c",
+    "children": [
+      {
+        "id": "grammar",
+        "title": "Grammar",
+        "children": [
+          {
+            "id": "verbs",
+            "title": "Verbs",
+            "children": [
+              {
+                "id": "present-er",
+                "title": "Le présent: -er verbs",
+                "file": "content/french/present-er-verbs.md"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "glossary": "content/french/glossary.json"
+  },
+  {
+    "id": "programming",
+    "title": "Programming",
+    "color": "#1f9d6b",
+    "glossary": "content/programming/glossary.json",
+    "children": [
+      {
+        "id": "c",
+        "title": "C",
+        "children": [
+          {
+            "id": "getting-started",
+            "title": "Getting started",
+            "children": [
+              {
+                "id": "hello-world-and-compiling",
+                "title": "Hello world and compiling",
+                "file": "content/programming/c/hello-world-and-compiling.md"
+              },
+              {
+                "id": "types-and-variables",
+                "title": "Types and variables",
+                "file": "content/programming/c/types-and-variables.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "memory",
+            "title": "Memory",
+            "children": [
+              {
+                "id": "pointers",
+                "title": "Pointers",
+                "file": "content/programming/c/pointers.md",
+                "draft": true
+              },
+              {
+                "id": "malloc-and-free",
+                "title": "malloc and free",
+                "file": "content/programming/c/malloc-and-free.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sql",
+        "title": "SQL",
+        "children": [
+          {
+            "id": "querying",
+            "title": "Querying",
+            "children": [
+              {
+                "id": "select-and-where",
+                "title": "SELECT and WHERE",
+                "file": "content/programming/sql/select-and-where.md",
+                "draft": true
+              },
+              {
+                "id": "joins",
+                "title": "Joins",
+                "file": "content/programming/sql/joins.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "designing-databases",
+            "title": "Designing databases",
+            "children": [
+              {
+                "id": "tables-keys-and-constraints",
+                "title": "Tables, keys and constraints",
+                "file": "content/programming/sql/tables-keys-and-constraints.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "git",
+        "title": "Git",
+        "children": [
+          {
+            "id": "everyday-git",
+            "title": "Everyday Git",
+            "children": [
+              {
+                "id": "commits-and-branches",
+                "title": "Commits and branches",
+                "file": "content/programming/git/commits-and-branches.md",
+                "draft": true
+              },
+              {
+                "id": "remotes-and-github",
+                "title": "Remotes and GitHub",
+                "file": "content/programming/git/remotes-and-github.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "fixing-mistakes",
+            "title": "Fixing mistakes",
+            "children": [
+              {
+                "id": "undoing-changes",
+                "title": "Undoing changes",
+                "file": "content/programming/git/undoing-changes.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   {
-    "id": "french", "title": "French", "color": "#d6336c",
+    "id": "linux",
+    "title": "Linux",
+    "color": "#0b7285",
+    "glossary": "content/linux/glossary.json",
     "children": [
-      { "id": "grammar", "title": "Grammar", "children": [
-        { "id": "verbs", "title": "Verbs", "children": [
-          { "id": "present-er", "title": "Le présent: -er verbs", "file": "content/french/present-er-verbs.md" }
-        ]}
-      ]}
+      {
+        "id": "fundamentals",
+        "title": "Fundamentals",
+        "children": [
+          {
+            "id": "concepts",
+            "title": "Concepts",
+            "children": [
+              {
+                "id": "what-linux-is",
+                "title": "What Linux is",
+                "file": "content/linux/fundamentals/what-linux-is.md",
+                "draft": true
+              },
+              {
+                "id": "distributions",
+                "title": "Distributions",
+                "file": "content/linux/fundamentals/distributions.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "filesystem",
+            "title": "Filesystem",
+            "children": [
+              {
+                "id": "directory-layout",
+                "title": "Directory layout",
+                "file": "content/linux/fundamentals/directory-layout.md",
+                "draft": true
+              },
+              {
+                "id": "permissions",
+                "title": "Permissions",
+                "file": "content/linux/fundamentals/permissions.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "command-line",
+        "title": "Command line",
+        "children": [
+          {
+            "id": "shell",
+            "title": "Shell",
+            "children": [
+              {
+                "id": "navigating-and-files",
+                "title": "Navigating and files",
+                "file": "content/linux/command-line/navigating-and-files.md",
+                "draft": true
+              },
+              {
+                "id": "pipes-and-redirection",
+                "title": "Pipes and redirection",
+                "file": "content/linux/command-line/pipes-and-redirection.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "text-tools",
+            "title": "Text tools",
+            "children": [
+              {
+                "id": "grep-sed-and-awk",
+                "title": "grep, sed and awk",
+                "file": "content/linux/command-line/grep-sed-and-awk.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "administration",
+        "title": "Administration",
+        "children": [
+          {
+            "id": "users-and-packages",
+            "title": "Users and packages",
+            "children": [
+              {
+                "id": "users-and-groups",
+                "title": "Users and groups",
+                "file": "content/linux/administration/users-and-groups.md",
+                "draft": true
+              },
+              {
+                "id": "package-managers",
+                "title": "Package managers",
+                "file": "content/linux/administration/package-managers.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "services",
+            "title": "Services",
+            "children": [
+              {
+                "id": "systemd",
+                "title": "systemd",
+                "file": "content/linux/administration/systemd.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "networking",
+        "title": "Networking",
+        "children": [
+          {
+            "id": "basics",
+            "title": "Basics",
+            "children": [
+              {
+                "id": "network-configuration",
+                "title": "Network configuration",
+                "file": "content/linux/networking/network-configuration.md",
+                "draft": true
+              },
+              {
+                "id": "ssh",
+                "title": "SSH",
+                "file": "content/linux/networking/ssh.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cybersecurity",
+    "title": "Cybersecurity",
+    "color": "#7048e8",
+    "glossary": "content/cybersecurity/glossary.json",
+    "children": [
+      {
+        "id": "foundations",
+        "title": "Foundations",
+        "children": [
+          {
+            "id": "ethics-and-law",
+            "title": "Ethics and law",
+            "children": [
+              {
+                "id": "scope-and-permission",
+                "title": "Scope and permission",
+                "file": "content/cybersecurity/foundations/scope-and-permission.md",
+                "draft": true
+              },
+              {
+                "id": "responsible-disclosure",
+                "title": "Responsible disclosure",
+                "file": "content/cybersecurity/foundations/responsible-disclosure.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "core-concepts",
+            "title": "Core concepts",
+            "children": [
+              {
+                "id": "the-cia-triad",
+                "title": "The CIA triad",
+                "file": "content/cybersecurity/foundations/the-cia-triad.md",
+                "draft": true
+              },
+              {
+                "id": "threat-modelling",
+                "title": "Threat modelling",
+                "file": "content/cybersecurity/foundations/threat-modelling.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kali-linux",
+        "title": "Kali Linux",
+        "children": [
+          {
+            "id": "setup",
+            "title": "Setup",
+            "children": [
+              {
+                "id": "installing-kali",
+                "title": "Installing Kali",
+                "file": "content/cybersecurity/kali-linux/installing-kali.md",
+                "draft": true
+              },
+              {
+                "id": "tool-overview",
+                "title": "Tool overview",
+                "file": "content/cybersecurity/kali-linux/tool-overview.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "workflow",
+            "title": "Workflow",
+            "children": [
+              {
+                "id": "reconnaissance-workflow",
+                "title": "Reconnaissance workflow",
+                "file": "content/cybersecurity/kali-linux/reconnaissance-workflow.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kali-nethunter",
+        "title": "Kali NetHunter",
+        "children": [
+          {
+            "id": "setup",
+            "title": "Setup",
+            "children": [
+              {
+                "id": "what-nethunter-is",
+                "title": "What NetHunter is",
+                "file": "content/cybersecurity/kali-nethunter/what-nethunter-is.md",
+                "draft": true
+              },
+              {
+                "id": "supported-devices-and-installing",
+                "title": "Supported devices and installing",
+                "file": "content/cybersecurity/kali-nethunter/supported-devices-and-installing.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "osint",
+        "title": "OSINT",
+        "children": [
+          {
+            "id": "methods",
+            "title": "Methods",
+            "children": [
+              {
+                "id": "passive-reconnaissance",
+                "title": "Passive reconnaissance",
+                "file": "content/cybersecurity/osint/passive-reconnaissance.md",
+                "draft": true
+              },
+              {
+                "id": "search-operators",
+                "title": "Search operators",
+                "file": "content/cybersecurity/osint/search-operators.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "staying-safe",
+            "title": "Staying safe",
+            "children": [
+              {
+                "id": "operational-security",
+                "title": "Operational security",
+                "file": "content/cybersecurity/osint/operational-security.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "physical-tools",
+        "title": "Physical tools",
+        "children": [
+          {
+            "id": "lab-hardware",
+            "title": "Lab hardware",
+            "children": [
+              {
+                "id": "wi-fi-adapters",
+                "title": "Wi-Fi adapters",
+                "file": "content/cybersecurity/physical-tools/wi-fi-adapters.md",
+                "draft": true
+              },
+              {
+                "id": "raspberry-pi-and-microcontrollers",
+                "title": "Raspberry Pi and microcontrollers",
+                "file": "content/cybersecurity/physical-tools/raspberry-pi-and-microcontrollers.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "physical-security",
+            "title": "Physical security",
+            "children": [
+              {
+                "id": "locks-and-access-control-concepts",
+                "title": "Locks and access control concepts",
+                "file": "content/cybersecurity/physical-tools/locks-and-access-control-concepts.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ai-ml",
+    "title": "Artificial Intelligence and Machine Learning",
+    "color": "#e8590c",
+    "glossary": "content/ai-ml/glossary.json",
+    "children": [
+      {
+        "id": "foundations",
+        "title": "Foundations",
+        "children": [
+          {
+            "id": "maths-for-ml",
+            "title": "Maths for ML",
+            "children": [
+              {
+                "id": "linear-algebra",
+                "title": "Linear algebra",
+                "file": "content/ai-ml/foundations/linear-algebra.md",
+                "draft": true
+              },
+              {
+                "id": "probability-and-statistics",
+                "title": "Probability and statistics",
+                "file": "content/ai-ml/foundations/probability-and-statistics.md",
+                "draft": true
+              },
+              {
+                "id": "calculus-and-gradients",
+                "title": "Calculus and gradients",
+                "file": "content/ai-ml/foundations/calculus-and-gradients.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "python-tools",
+            "title": "Python tools",
+            "children": [
+              {
+                "id": "numpy-and-pandas",
+                "title": "NumPy and pandas",
+                "file": "content/ai-ml/foundations/numpy-and-pandas.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "machine-learning",
+        "title": "Machine learning",
+        "children": [
+          {
+            "id": "supervised-learning",
+            "title": "Supervised learning",
+            "children": [
+              {
+                "id": "linear-regression",
+                "title": "Linear regression",
+                "file": "content/ai-ml/machine-learning/linear-regression.md",
+                "draft": true
+              },
+              {
+                "id": "classification",
+                "title": "Classification",
+                "file": "content/ai-ml/machine-learning/classification.md",
+                "draft": true
+              },
+              {
+                "id": "overfitting-and-validation",
+                "title": "Overfitting and validation",
+                "file": "content/ai-ml/machine-learning/overfitting-and-validation.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "unsupervised-learning",
+            "title": "Unsupervised learning",
+            "children": [
+              {
+                "id": "clustering",
+                "title": "Clustering",
+                "file": "content/ai-ml/machine-learning/clustering.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "deep-learning",
+        "title": "Deep learning",
+        "children": [
+          {
+            "id": "neural-networks",
+            "title": "Neural networks",
+            "children": [
+              {
+                "id": "perceptrons-and-layers",
+                "title": "Perceptrons and layers",
+                "file": "content/ai-ml/deep-learning/perceptrons-and-layers.md",
+                "draft": true
+              },
+              {
+                "id": "backpropagation",
+                "title": "Backpropagation",
+                "file": "content/ai-ml/deep-learning/backpropagation.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "architectures",
+            "title": "Architectures",
+            "children": [
+              {
+                "id": "cnns",
+                "title": "CNNs",
+                "file": "content/ai-ml/deep-learning/cnns.md",
+                "draft": true
+              },
+              {
+                "id": "transformers",
+                "title": "Transformers",
+                "file": "content/ai-ml/deep-learning/transformers.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "large-language-models",
+        "title": "Large language models",
+        "children": [
+          {
+            "id": "how-llms-work",
+            "title": "How LLMs work",
+            "children": [
+              {
+                "id": "tokens-and-embeddings",
+                "title": "Tokens and embeddings",
+                "file": "content/ai-ml/large-language-models/tokens-and-embeddings.md",
+                "draft": true
+              },
+              {
+                "id": "training-and-fine-tuning",
+                "title": "Training and fine-tuning",
+                "file": "content/ai-ml/large-language-models/training-and-fine-tuning.md",
+                "draft": true
+              }
+            ]
+          },
+          {
+            "id": "using-llms",
+            "title": "Using LLMs",
+            "children": [
+              {
+                "id": "prompting",
+                "title": "Prompting",
+                "file": "content/ai-ml/large-language-models/prompting.md",
+                "draft": true
+              },
+              {
+                "id": "evaluation-and-safety",
+                "title": "Evaluation and safety",
+                "file": "content/ai-ml/large-language-models/evaluation-and-safety.md",
+                "draft": true
+              }
+            ]
+          }
+        ]
+      }
     ]
   }
 ]

@@ -63,10 +63,29 @@ a.card:hover { background: var(--highlighter); color: #1d2433; border-color: #1d
 .notes { background: var(--card); border: 2px solid var(--ink); border-top: 8px solid var(--c, var(--ink)); padding: 2rem clamp(1rem, 4vw, 3rem); line-height: 1.7; max-width: 70ch; }
 .notes h1, .notes h2, .notes h3 { font-family: var(--head); line-height: 1.2; }
 .notes h1 { margin-top: 0; }
-.notes mark { background: linear-gradient(transparent 35%, var(--highlighter) 35%); color: inherit; padding: 0 .15em; }
+.notes mark { background: linear-gradient(transparent 35%, var(--highlighter) 35%); color: #1d2433; padding: 0 .15em; }
 .notes code { background: var(--grid); padding: .1em .35em; border-radius: 3px; }
 .notes pre { background: var(--grid); padding: 1rem; overflow-x: auto; }
 .notes pre code { background: none; padding: 0; }
 .notes table { border-collapse: collapse; }
 .notes th, .notes td { border: 1px solid var(--ink); padding: .35rem .7rem; }
 .notes blockquote { margin-left: 0; padding-left: 1rem; border-left: 4px solid var(--highlighter); }
+
+/* ---------- Maths and code ---------- */
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: .3rem 0; }
+.notes pre { position: relative; }
+.notes pre code.hljs { background: transparent; padding: 0; }
+.copy { position: absolute; top: .4rem; right: .4rem; font: 500 .75rem var(--head); background: var(--card); color: var(--ink); border: 1px solid var(--ink); padding: .15rem .5rem; cursor: pointer; }
+
+/* ---------- Glossary ---------- */
+.term { border-bottom: 2px dotted var(--c, var(--ink)); cursor: help; }
+.term:hover, .term:focus-visible { background: var(--highlighter); color: #1d2433; outline: none; }
+.gloss-pop { position: fixed; z-index: 10; max-width: 22rem; pointer-events: none; background: var(--card); color: var(--ink); border: 2px solid var(--ink); box-shadow: 4px 4px 0 var(--c, var(--ink)); padding: .7rem .9rem; font-size: .9rem; line-height: 1.5; }
+.gloss-pop[hidden] { display: none; }
+.gloss-title { font: 700 1.05rem var(--head); }
+.gloss-meta { font-size: .8rem; opacity: .7; margin-bottom: .3rem; }
+.gloss-more { margin-top: .4rem; opacity: .85; }
+.gloss-ex { margin-top: .4rem; font-style: italic; border-left: 3px solid var(--highlighter); padding-left: .6rem; }
+
+/* Empty template lessons */
+.card.draft { border-style: dashed; opacity: .7; }

@@ -1,0 +1,7 @@
+{
+  "overfitting": {
+    "term": "Overfitting",
+    "type": "noun",
+    "def": "When a model memorises its training data and performs badly on new data."
+  }
+}

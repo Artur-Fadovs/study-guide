@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Literata:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --ink: #1d2433;
+  --paper: #f3f6fa;
+  --grid: #dde4ee;
+  --card: #ffffff;
+  --highlighter: #ffe14d;
+  --head: 'Bricolage Grotesque', system-ui, sans-serif;
+  --body: 'Literata', Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #e6ebf5; --paper: #151a26; --grid: #20283a; --card: #1e2536; }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--body);
+  background-color: var(--paper);
+  /* graph-paper background */
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.wrap { max-width: 880px; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+.site-title { font: 700 2.6rem/1.1 var(--head); margin: 0 0 .4rem; }
+.intro { margin: 0 0 2rem; opacity: .75; }
+
+/* ---------- Card tree ---------- */
+.tree { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; align-items: start; }
+.tree > .node.open { grid-column: 1 / -1; }   /* an open subject takes the whole row */
+
+.card {
+  display: block; width: 100%; text-align: left; text-decoration: none; cursor: pointer;
+  color: inherit; background: var(--card); font: 500 1rem/1.3 var(--head);
+  border: 2px solid var(--ink); padding: .8rem 1rem;
+  box-shadow: 4px 4px 0 var(--c, var(--ink));
+}
+.card:focus-visible { outline: 3px solid var(--highlighter); outline-offset: 2px; }
+button.card::after { content: '+'; float: right; font-weight: 700; }
+button.card[aria-expanded="true"]::after { content: '–'; }
+
+/* each level is visually quieter than the one above */
+.card.d0 { width: min(100%, 280px); font-size: 1.4rem; padding: 1.4rem 1rem; border-radius: 14px; background: var(--c); color: #fff; box-shadow: none; border-color: var(--c); }
+.card.d1 { font-size: 1.1rem; border-radius: 10px; }
+.card.d2 { border-radius: 6px; }
+.card.d3 { border-radius: 2px; font-family: var(--body); font-weight: 400; }  /* lessons */
+a.card:hover { background: var(--highlighter); color: #1d2433; border-color: #1d2433; }
+
+.kids {
+  display: none; flex-direction: column; gap: .6rem;
+  margin: .7rem 0 .4rem 1.1rem; padding-left: 1rem;
+  border-left: 3px solid var(--c);     /* the line shows which subject you're inside */
+}
+.node.open > .kids { display: flex; }
+
+/* ---------- Lesson page ---------- */
+.crumbs { font: 500 .9rem var(--head); margin-bottom: 1.5rem; }
+.crumbs a { color: inherit; }
+.notes { background: var(--card); border: 2px solid var(--ink); border-top: 8px solid var(--c, var(--ink)); padding: 2rem clamp(1rem, 4vw, 3rem); line-height: 1.7; max-width: 70ch; }
+.notes h1, .notes h2, .notes h3 { font-family: var(--head); line-height: 1.2; }
+.notes h1 { margin-top: 0; }
+.notes mark { background: linear-gradient(transparent 35%, var(--highlighter) 35%); color: inherit; padding: 0 .15em; }
+.notes code { background: var(--grid); padding: .1em .35em; border-radius: 3px; }
+.notes pre { background: var(--grid); padding: 1rem; overflow-x: auto; }
+.notes pre code { background: none; padding: 0; }
+.notes table { border-collapse: collapse; }
+.notes th, .notes td { border: 1px solid var(--ink); padding: .35rem .7rem; }
+.notes blockquote { margin-left: 0; padding-left: 1rem; border-left: 4px solid var(--highlighter); }

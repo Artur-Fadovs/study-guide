@@ -1,0 +1,22 @@
+[
+  {
+    "id": "math", "title": "Mathematics", "color": "#2f6fed",
+    "children": [
+      { "id": "algebra", "title": "Algebra", "children": [
+        { "id": "linear", "title": "Linear equations", "children": [
+          { "id": "one-step", "title": "Solving one-step equations", "file": "content/mathematics/one-step-equations.md" }
+        ]}
+      ]}
+    ]
+  },
+  {
+    "id": "french", "title": "French", "color": "#d6336c",
+    "children": [
+      { "id": "grammar", "title": "Grammar", "children": [
+        { "id": "verbs", "title": "Verbs", "children": [
+          { "id": "present-er", "title": "Le présent: -er verbs", "file": "content/french/present-er-verbs.md" }
+        ]}
+      ]}
+    ]
+  }
+]
